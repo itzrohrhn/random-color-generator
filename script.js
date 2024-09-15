@@ -1,0 +1,15 @@
+const color = () => {
+    const randNum = Math.floor(Math.random()*16777215);
+    const randCode = "#"+randNum.toString(16);
+    console.log(randCode);
+    document.body.style.backgroundColor = randCode;
+    document.getElementById("color-code").innerHTML = randCode;
+}
+document.getElementById("btn").addEventListener("click",color);
+
+const btn = document.getElementById("btn");
+const tag = document.getElementById("tag");
+btn.addEventListener("click",function(){
+    btn.innerHTML = "Click Me";
+    tag.style.boxShadow = `10px 10px 10px ${randCode}`;
+});

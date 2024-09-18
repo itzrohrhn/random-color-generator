@@ -1,5 +1,6 @@
 //arrow function definition for generating random colors
 const color = () => {
+    //generationg random hex numbers for the hex color codes.
     const randNum = Math.floor(Math.random()*16777215);
     const randCode = "#"+randNum.toString(16);
     console.log(randCode);
